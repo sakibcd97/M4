@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Show</title>
+    <style>
+        td,
+        th {
+            border: 1px solid black;
+            padding: 5px 10px;
+
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: green;
+            color: white;
+        }
+
+        tfoot {
+            background-color: brown;
+            color: aliceblue;
+        }
+    </style>
+    <link rel="stylesheet" href="styles/nav.css">
+</head>
+
+<body>
+    <h1>HTML SHOW</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li>
+                    <a href="table.html">Table</a>
+                    <ul class="dropdown">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="table.html">Table</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <table>
+            <caption>
+                <h1><u>Student's Data</u></h1>
+            </caption>
+            <thead>
+                <tr>
+                    <th>SL No.</th>
+                    <th>Name</th>
+                    <th>Major</th>
+                    <th>Scholarship</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Alex</td>
+                    <td>EIE</td>
+                    <td>1st class</td>
+
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Flex</td>
+                    <td>EIE</td>
+                    <td>2nd class</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Amir</td>
+                    <td>CST</td>
+                    <td>3rd class</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Abir</td>
+                    <td>CST</td>
+                    <td>1st class</td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Total students: 4</td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </main>
+
+</body>
+
+</html>

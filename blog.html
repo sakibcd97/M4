@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitha Utsob</title>
+    <link rel="stylesheet" href="styles/nav.css">
+    <style>
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        /* input{
+            background-color: rgb(137, 132, 132);
+            color:white;
+            
+        } */
+        #button{
+            background-color: green;
+            border-radius: 10px;
+            color:bisque;
+            box-shadow: lightcoral 5px 5px;
+        }
+        legend{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="table.html">Table</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Please fill up the form </h2>
+            <form>
+                <label for="name">Your name:
+                    <input id="name" type="text" placeholder="Your name">
+                </label>
+                
+
+                <label for="email">Your email:
+                    <input id="email" type="text" placeholder="Your email">
+                </label>
+                
+                <label for="phone">Phone number:
+                    <input id="phone" type="text" placeholder="Your phone number">
+                </label>
+                
+                <fieldset>
+                    <legend >Please select one pitha</legend>
+                    <label for="vapa">
+                        <input type="radio" name="pitha" id="vapa">Vapa
+                    </label>
+                    <label for="chitoy">
+                        <input type="radio" name="pitha" id="Chitoy">Chitoy
+                    </label>
+                    <label for="Teler pitha">
+                        <input type="radio" name="pitha" id="Teler pitha">Teler pitha
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        Please select one or more vorta
+                    </legend>
+                    <label for="sorisa">
+                        <input type="checkbox" name="vorta" id="sorisa">Sorisa
+                    </label>
+                    <label for="dhoniya">
+                        <input type="checkbox" name="vorta" id="dhoniya">Dhoniya
+                    </label>
+                </fieldset>
+
+                <input id="button" type="reset" value="Reset">
+                <input id="button" type="submit" value="Submit">
+               
+            </form>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
